@@ -14,9 +14,8 @@ public class TransferRequest {
     @NotNull(message = "To account ID is required")
     private Long toAccountId;
 
-    @NotNull(message = "Amount is required")
     @Positive(message = "Amount must be greater than 0")
-    private Double amount;
+    private double amount;
 
     @NotBlank(message = "Note is required")
     private String note;
